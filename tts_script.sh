@@ -29,7 +29,7 @@ SPEED=300;
 # between 80 - 450,
 # default is 175
 # 240 is a good baseline
-# 380 is about as fast as I can still understand
+# 380 is about as fast as I can still understand easily
 
 PITCH=60; # between 0 - 99, default is 50
 TARGET="'$(xclip -selection primary -o)'"; # the selected text to be spoken
