@@ -25,17 +25,18 @@
 VOICE=english; # default is literally called default
 ###############################################################################
 
-SPEED=340;
+SPEED=300;
 # between 80 - 450,
 # default is 175
 # 240 is a good baseline
 # 380 is about as fast as I can still understand
 
 PITCH=60; # between 0 - 99, default is 50
-TARGET="$(xclip -selection primary -o)"; # the selected text to be spoken
+TARGET="'$(xclip -selection primary -o)'"; # the selected text to be spoken
 
 if [ $(pidof espeak) ]; then # toggl speaking on/off
     killall espeak;
 else
-    espeak -s $SPEED -v $VOICE -p $PITCH $TARGET; # primary envocation
+    # primary envocation
+    espeak --punct="-" -s $SPEED -v $VOICE -p $PITCH $TARGET;
 fi
