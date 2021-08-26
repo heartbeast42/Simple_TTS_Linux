@@ -38,5 +38,5 @@ if [ $(pidof espeak) ]; then # toggl speaking on/off
     killall espeak;
 else
     # primary envocation
-    espeak --punct="-" -s $SPEED -v $VOICE -p $PITCH $TARGET;
+    espeak --punct="-;^()[]{}|_<>\`" -s $SPEED -v $VOICE -p $PITCH $TARGET;
 fi
