@@ -2,11 +2,12 @@
 # A simple/useful text to speech script for Linux.
 
 ## Dependencies
-The only dependency is `espeak`
-for Debian/Ubuntu like systems you can install it with...
+The only dependencies are `espeak` & `xclip`
+### Debian/Ubuntu based systems you can install it with...
 ``` sh
 sudo apt update
 sudo apt install espeak
+sudo apt install xclip
 ```
 
 ## Install and setup
